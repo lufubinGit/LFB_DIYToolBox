@@ -9,14 +9,14 @@
 import UIKit
 import Foundation
 
-protocol LFB_DIY_ToolBox  {
+public protocol LFB_DIY_ToolBox  {
 }
 
-typealias BtnAction = (UIButton)->()
+public typealias BtnAction = (UIButton)->()
 
 
 // 点击事件
-extension UIButton {
+public extension UIButton {
     /// 处理按钮点击放大事件
     @objc fileprivate func pressedEvent(){
         UIView.animate(withDuration: 0.2) {
@@ -113,7 +113,7 @@ extension UIButton {
 /**
  *  按钮的类别
  */
-internal enum FBButtonType{
+public enum FBButtonType{
     case ImageLeft    //图片在左边
     case ImageTop     //图片在上方
     case ImageRight   //图片在右边
@@ -183,27 +183,27 @@ extension UIButton{
     }
    
     @discardableResult
-    func addTouchUpInsideBtnAction(_ action:@escaping BtnAction) -> UIButton{
+    public func addTouchUpInsideBtnAction(_ action:@escaping BtnAction) -> UIButton{
         return self.DIY_button_add(action: action, for: .touchUpInside)
     }
     @discardableResult
-    func addTouchUpOutsideBtnAction(_ action:@escaping BtnAction) -> UIButton{
+    public func addTouchUpOutsideBtnAction(_ action:@escaping BtnAction) -> UIButton{
         return self.DIY_button_add(action: action, for: .touchUpOutside)
     }
     @discardableResult
-    func addTouchDragOutsideBtnAction(_ action:@escaping BtnAction) -> UIButton{
+    public func addTouchDragOutsideBtnAction(_ action:@escaping BtnAction) -> UIButton{
         return self.DIY_button_add(action: action, for: .touchDragOutside)
     }
     @discardableResult
-    func addTouchDragInsideBtnAction(_ action:@escaping BtnAction) -> UIButton{
+    public func addTouchDragInsideBtnAction(_ action:@escaping BtnAction) -> UIButton{
         return self.DIY_button_add(action: action, for: .touchDragInside)
     }
     @discardableResult
-    func addTouchDownBtnAction(_ action:@escaping BtnAction) -> UIButton{
+    public func addTouchDownBtnAction(_ action:@escaping BtnAction) -> UIButton{
         return self.DIY_button_add(action: action, for: .touchDown)
     }
     @discardableResult
-    func addTouchDragEnterBtnAction(_ action:@escaping BtnAction) -> UIButton{
+    public func addTouchDragEnterBtnAction(_ action:@escaping BtnAction) -> UIButton{
         return self.DIY_button_add(action: action, for: .touchDragEnter)
     }
     @discardableResult
@@ -217,13 +217,13 @@ extension UIButton{
     
     
     //按钮 点击时自动放大
-    func DIY_button_enlargeWhenClicked(){
+   public func DIY_button_enlargeWhenClicked(){
         self.addTarget(self, action:#selector(pressedEvent), for: .touchUpInside)
         self.addTarget(self, action: #selector(unpressedEvent), for: .touchUpOutside)
     }
     
     //设置buton的文字和图片的位置
-    func DIY_button_setButtonLayout(type:FBButtonType, space:CGFloat,numLines:CGFloat = 1){
+   public func DIY_button_setButtonLayout(type:FBButtonType, space:CGFloat,numLines:CGFloat = 1){
         let space:CGFloat = space
         
         self.imageEdgeInsets = UIEdgeInsets.zero
