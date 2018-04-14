@@ -207,11 +207,11 @@ extension UIButton{
         return self.DIY_button_add(action: action, for: .touchDragEnter)
     }
     @discardableResult
-    func addTouchDragExitBtnAction(_ action:@escaping BtnAction) -> UIButton{
+    public func addTouchDragExitBtnAction(_ action:@escaping BtnAction) -> UIButton{
         return self.DIY_button_add(action: action, for: .touchDragExit)
     }
     @discardableResult
-    func addTouchCancelBtnAction(_ action:@escaping BtnAction) -> UIButton{
+    public func addTouchCancelBtnAction(_ action:@escaping BtnAction) -> UIButton{
         return self.DIY_button_add(action: action, for: .touchCancel)
     }
     
