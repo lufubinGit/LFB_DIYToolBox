@@ -9,39 +9,39 @@
 import UIKit
 
 /// 针对数据类型转换 类型转换器
-protocol LFB_TypeConvert{}
+public protocol LFB_TypeConvert{}
 extension Int:LFB_TypeConvert{
-    func string() -> String {
+   public func string() -> String {
         return "\(self)"
     }
     
-    func cgfloat() -> CGFloat {
+   public func cgfloat() -> CGFloat {
         return CGFloat(self)
     }
 }
 
 extension CGFloat:LFB_TypeConvert{
-    func string() -> String {
+   public func string() -> String {
         return "\(self)"
     }
     
-    func nsinteger() -> NSInteger {
+   public func nsinteger() -> NSInteger {
         return NSInteger(self)
     }
 }
 
 extension String:LFB_TypeConvert{
     
-    func nsinteger() -> NSInteger?{
+   public func nsinteger() -> NSInteger?{
         return NSInteger.init(self)
     }
     
-    func cgfloat() -> CGFloat {
+   public func cgfloat() -> CGFloat {
         return CGFloat((self as NSString).floatValue)
     }
 }
 
-extension UIView{
+public extension UIView{
     
     public var Width: CGFloat{
         get{
@@ -161,7 +161,7 @@ extension UIView{
 
 
 fileprivate var halowViewHandle:((UIView)->(Void))? = nil
-extension UIView{
+public extension UIView{
     
     
     /// 在一个 View 上添加 红色角标

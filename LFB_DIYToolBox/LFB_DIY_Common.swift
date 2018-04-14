@@ -7,11 +7,11 @@
 //
 
 import UIKit
-let ScreenWidth:CGFloat = UIScreen.main.bounds.size.width
-let ScreenHeight:CGFloat = UIScreen.main.bounds.size.height
-let navHei:CGFloat = 64
-let tabHei:CGFloat = currentPhoneType == .iPhoneX ? 83 : 49
-let stateHei: CGFloat = currentPhoneType == .iPhoneX ? 39 : 0
+public let ScreenWidth:CGFloat = UIScreen.main.bounds.size.width
+public let ScreenHeight:CGFloat = UIScreen.main.bounds.size.height
+public let navHei:CGFloat = 64
+public let tabHei:CGFloat = currentPhoneType == .iPhoneX ? 83 : 49
+public let stateHei: CGFloat = currentPhoneType == .iPhoneX ? 39 : 0
 
 
 
@@ -56,7 +56,7 @@ public enum PhoneType:String{
     case UnKnowDevice = "unknow"
 }
 // MARK - 获取当前手型号
-var currentPhoneType:PhoneType{
+public var currentPhoneType:PhoneType{
     get{
         var sysInfo = utsname.init()
         uname(&sysInfo)
@@ -149,13 +149,13 @@ var currentPhoneType:PhoneType{
     }
 }
 
-extension LFB_DIY_ToolBox where Self: Any{
+public extension LFB_DIY_ToolBox where Self: Any{
     /// 延时函数
     ///
     /// - Parameters:
     ///   - atime: 时间
     ///   - closures: 回调
-    internal func delayAction(atime:TimeInterval,closures: @escaping () -> ()) {
+    public func delayAction(atime:TimeInterval,closures: @escaping () -> ()) {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + atime, execute:closures)
     }
     
@@ -164,14 +164,14 @@ extension LFB_DIY_ToolBox where Self: Any{
     /// - Parameters:
     ///   - atime: 时间
     ///   - closures: 回调
-    static func delayAction(atime:TimeInterval,closures: @escaping () -> ()) {
+    public static func delayAction(atime:TimeInterval,closures: @escaping () -> ()) {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + atime, execute:closures)
     }
 
     /// 通过反射获取对象所有的属性
     ///
     /// - Returns: 所有属性的一个数组
-    func getAllVarsWithMirro()->[String]{
+    public static func getAllVarsWithMirro()->[String]{
         let mirro = Mirror.init(reflecting: self)
         var pros: [String] = [String]()
         for item in mirro.children{
@@ -184,11 +184,11 @@ extension LFB_DIY_ToolBox where Self: Any{
     
 }
 
-extension LFB_DIY_ToolBox where Self: AnyObject{
-    internal func delayAction(atime:TimeInterval,closures: @escaping () -> ()) {
+public extension LFB_DIY_ToolBox where Self: AnyObject{
+    public func delayAction(atime:TimeInterval,closures: @escaping () -> ()) {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + atime, execute:closures)
     }
-    static func delayAction(atime:TimeInterval,closures: @escaping () -> ()) {
+   public static func delayAction(atime:TimeInterval,closures: @escaping () -> ()) {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + atime, execute:closures)
     }
 }
@@ -227,13 +227,13 @@ extension Then where Self: AnyObject {
 }
 
 extension NSObject: Then {}
-extension NSObject {
+public extension NSObject {
     
     /// 获取指定类的属性和属性值  返回一个以属性名的为键 属性值为值的 字典
     ///
     /// - Parameter filter: 需要过滤的属性
     /// - Returns: 返回对象的所有的属性的健值对
-    func classAllPorp(filter:NSArray) -> NSDictionary {
+    public func classAllPorp(filter:NSArray) -> NSDictionary {
         var count: UInt32 = 0
         //获取类的属性列表,返回属性列表的数组,可选项
         let list = class_copyPropertyList(self.classForCoder, &count)
@@ -263,7 +263,7 @@ extension NSObject {
     ///   - font: 字体
     ///   - height: 设定高度
     /// - Returns: 返回的字符串宽度
-    func getLabWidth(labelStr:String,font:UIFont,height:CGFloat) -> CGFloat {
+   public func getLabWidth(labelStr:String,font:UIFont,height:CGFloat) -> CGFloat {
         
         let statusLabelText: NSString = labelStr as NSString
         
@@ -284,7 +284,7 @@ extension NSObject {
     ///   - font: <#font description#>
     ///   - Width: <#Width description#>
     /// - Returns: <#return value description#>
-    func getLabHeight(labelStr:String,font:UIFont,Width:CGFloat) -> CGFloat{
+   public func getLabHeight(labelStr:String,font:UIFont,Width:CGFloat) -> CGFloat{
         
         let statusLabelText: NSString = labelStr as NSString
         let size = CGSize.init(width: Width, height: 999)
@@ -300,7 +300,7 @@ extension NSObject {
     ///   - labelStr: 字符内容
     ///   - font: 大小
     /// - Returns: 尺寸
-    func  getLabelSize(labelStr:String,font:CGFloat)->CGSize{
+   public func  getLabelSize(labelStr:String,font:CGFloat)->CGSize{
         
         let W = self.getLabWidth(labelStr: labelStr, font: UIFont.systemFont(ofSize: font), height: 999) + 10
         let H = self.getLabHeight(labelStr: labelStr, font: UIFont.systemFont(ofSize: font), Width: 999) + 10

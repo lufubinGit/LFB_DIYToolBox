@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FBFootRefreshControl: UIView {
+open class FBFootRefreshControl: UIView {
     
     enum FootRefreshStatu: String {
         case readyRefresh = "Pull up loading"
@@ -33,11 +33,11 @@ class FBFootRefreshControl: UIView {
         self.titleLabel = UILabel.init()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
-    func makeRefresh(start: @escaping ()->(), end:@escaping ()->()) {
+   public func makeRefresh(start: @escaping ()->(), end:@escaping ()->()) {
         self.startAction = start
         self.endAction = end
         activity.color = UIColor.DIY_color_RGBA(r:50,g:50,b:50,a:1)
@@ -64,28 +64,27 @@ class FBFootRefreshControl: UIView {
         }
     }
     
-    func startRefresh(){
+   public func startRefresh(){
         self.statu = .refreshing
         self.startAction!()
         self.laoutSubs(isActivity: true)
         self.activity.startAnimating()
     }
     
-    func noMoreData(){
+   public func noMoreData(){
         self.statu = .noMoreData
         self.laoutSubs(isActivity: false)
         self.activity.stopAnimating()
-
     }
     
-    func resetStatu(){
+   public func resetStatu(){
         self.statu = .readyRefresh
         self.laoutSubs(isActivity: false)
         self.endAction!()
         self.activity.stopAnimating()
     }
     
-    func refreshEnable() -> Bool {
+   public func refreshEnable() -> Bool {
         return !self.activity.isAnimating && self.statu != .noMoreData
     }
     

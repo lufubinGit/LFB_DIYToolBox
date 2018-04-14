@@ -9,7 +9,7 @@
 import UIKit
 
 // MARK: - 字符串的拓展
-extension String {
+public extension String {
     
     
     /* 将一个完整的字符 的每一个字母拆解出来 并放进一个数组中 */

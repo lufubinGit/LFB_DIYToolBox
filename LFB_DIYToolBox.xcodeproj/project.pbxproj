@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6F1E53152081D8610032AC7A /* LFB_DIY_PublicPushTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1E530A2081D8610032AC7A /* LFB_DIY_PublicPushTool.swift */; };
-		6F1E53162081D8610032AC7A /* LFB_DIY_StringTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1E530B2081D8610032AC7A /* LFB_DIY_StringTool.swift */; };
-		6F1E53172081D8610032AC7A /* LFB_DIY_ColorTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1E530C2081D8610032AC7A /* LFB_DIY_ColorTool.swift */; };
-		6F1E53182081D8610032AC7A /* LFB_DIY_ImageTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1E530D2081D8610032AC7A /* LFB_DIY_ImageTool.swift */; };
-		6F1E53192081D8610032AC7A /* LFB_DIY_ControllerTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1E530E2081D8610032AC7A /* LFB_DIY_ControllerTool.swift */; };
-		6F1E531A2081D8620032AC7A /* LFB_DIY_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1E530F2081D8610032AC7A /* LFB_DIY_Extension.swift */; };
-		6F1E531B2081D8620032AC7A /* FBFootRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1E53102081D8610032AC7A /* FBFootRefreshControl.swift */; };
-		6F1E531D2081D8620032AC7A /* LFB_DIY_APPLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1E53122081D8610032AC7A /* LFB_DIY_APPLanguage.swift */; };
-		6F1E531E2081D8620032AC7A /* LFB_DIY_Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1E53132081D8610032AC7A /* LFB_DIY_Common.swift */; };
-		6F1E531F2081D8620032AC7A /* LFB_DIY_DLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1E53142081D8610032AC7A /* LFB_DIY_DLog.swift */; };
-		6F1E53232081D8B60032AC7A /* LFB_DIY_ButtonTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1E53222081D8B60032AC7A /* LFB_DIY_ButtonTool.swift */; };
 		6F72CBFD208086B60009A419 /* LFB_DIYToolBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F72CBF3208086B60009A419 /* LFB_DIYToolBox.framework */; };
 		6F72CC02208086B60009A419 /* LFB_DIYToolBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F72CC01208086B60009A419 /* LFB_DIYToolBoxTests.swift */; };
 		6F72CC04208086B60009A419 /* LFB_DIYToolBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F72CBF6208086B60009A419 /* LFB_DIYToolBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FA647E22081E03D0046AA16 /* LFB_DIY_PublicPushTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA647D72081E03C0046AA16 /* LFB_DIY_PublicPushTool.swift */; };
+		6FA647E32081E03D0046AA16 /* LFB_DIY_StringTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA647D82081E03C0046AA16 /* LFB_DIY_StringTool.swift */; };
+		6FA647E42081E03D0046AA16 /* LFB_DIY_ColorTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA647D92081E03C0046AA16 /* LFB_DIY_ColorTool.swift */; };
+		6FA647E52081E03D0046AA16 /* LFB_DIY_ImageTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA647DA2081E03C0046AA16 /* LFB_DIY_ImageTool.swift */; };
+		6FA647E62081E03D0046AA16 /* LFB_DIY_ControllerTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA647DB2081E03D0046AA16 /* LFB_DIY_ControllerTool.swift */; };
+		6FA647E72081E03D0046AA16 /* LFB_DIY_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA647DC2081E03D0046AA16 /* LFB_DIY_Extension.swift */; };
+		6FA647E82081E03D0046AA16 /* FBFootRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA647DD2081E03D0046AA16 /* FBFootRefreshControl.swift */; };
+		6FA647EA2081E03D0046AA16 /* LFB_DIY_APPLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA647DF2081E03D0046AA16 /* LFB_DIY_APPLanguage.swift */; };
+		6FA647EB2081E03D0046AA16 /* LFB_DIY_Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA647E02081E03D0046AA16 /* LFB_DIY_Common.swift */; };
+		6FA647EC2081E03D0046AA16 /* LFB_DIY_DLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA647E12081E03D0046AA16 /* LFB_DIY_DLog.swift */; };
+		6FA647EE2081E0420046AA16 /* LFB_DIY_ButtonTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA647ED2081E0420046AA16 /* LFB_DIY_ButtonTool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,23 +34,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6F1E530A2081D8610032AC7A /* LFB_DIY_PublicPushTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFB_DIY_PublicPushTool.swift; sourceTree = "<group>"; };
-		6F1E530B2081D8610032AC7A /* LFB_DIY_StringTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFB_DIY_StringTool.swift; sourceTree = "<group>"; };
-		6F1E530C2081D8610032AC7A /* LFB_DIY_ColorTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFB_DIY_ColorTool.swift; sourceTree = "<group>"; };
-		6F1E530D2081D8610032AC7A /* LFB_DIY_ImageTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFB_DIY_ImageTool.swift; sourceTree = "<group>"; };
-		6F1E530E2081D8610032AC7A /* LFB_DIY_ControllerTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFB_DIY_ControllerTool.swift; sourceTree = "<group>"; };
-		6F1E530F2081D8610032AC7A /* LFB_DIY_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFB_DIY_Extension.swift; sourceTree = "<group>"; };
-		6F1E53102081D8610032AC7A /* FBFootRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBFootRefreshControl.swift; sourceTree = "<group>"; };
-		6F1E53122081D8610032AC7A /* LFB_DIY_APPLanguage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFB_DIY_APPLanguage.swift; sourceTree = "<group>"; };
-		6F1E53132081D8610032AC7A /* LFB_DIY_Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFB_DIY_Common.swift; sourceTree = "<group>"; };
-		6F1E53142081D8610032AC7A /* LFB_DIY_DLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFB_DIY_DLog.swift; sourceTree = "<group>"; };
-		6F1E53222081D8B60032AC7A /* LFB_DIY_ButtonTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFB_DIY_ButtonTool.swift; sourceTree = "<group>"; };
 		6F72CBF3208086B60009A419 /* LFB_DIYToolBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LFB_DIYToolBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F72CBF6208086B60009A419 /* LFB_DIYToolBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFB_DIYToolBox.h; sourceTree = "<group>"; };
 		6F72CBF7208086B60009A419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F72CBFC208086B60009A419 /* LFB_DIYToolBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LFB_DIYToolBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F72CC01208086B60009A419 /* LFB_DIYToolBoxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFB_DIYToolBoxTests.swift; sourceTree = "<group>"; };
 		6F72CC03208086B60009A419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FA647D72081E03C0046AA16 /* LFB_DIY_PublicPushTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFB_DIY_PublicPushTool.swift; sourceTree = "<group>"; };
+		6FA647D82081E03C0046AA16 /* LFB_DIY_StringTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFB_DIY_StringTool.swift; sourceTree = "<group>"; };
+		6FA647D92081E03C0046AA16 /* LFB_DIY_ColorTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFB_DIY_ColorTool.swift; sourceTree = "<group>"; };
+		6FA647DA2081E03C0046AA16 /* LFB_DIY_ImageTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFB_DIY_ImageTool.swift; sourceTree = "<group>"; };
+		6FA647DB2081E03D0046AA16 /* LFB_DIY_ControllerTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFB_DIY_ControllerTool.swift; sourceTree = "<group>"; };
+		6FA647DC2081E03D0046AA16 /* LFB_DIY_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFB_DIY_Extension.swift; sourceTree = "<group>"; };
+		6FA647DD2081E03D0046AA16 /* FBFootRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBFootRefreshControl.swift; sourceTree = "<group>"; };
+		6FA647DF2081E03D0046AA16 /* LFB_DIY_APPLanguage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFB_DIY_APPLanguage.swift; sourceTree = "<group>"; };
+		6FA647E02081E03D0046AA16 /* LFB_DIY_Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFB_DIY_Common.swift; sourceTree = "<group>"; };
+		6FA647E12081E03D0046AA16 /* LFB_DIY_DLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFB_DIY_DLog.swift; sourceTree = "<group>"; };
+		6FA647ED2081E0420046AA16 /* LFB_DIY_ButtonTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFB_DIY_ButtonTool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,17 +94,17 @@
 			isa = PBXGroup;
 			children = (
 				6F72CBF6208086B60009A419 /* LFB_DIYToolBox.h */,
-				6F1E53222081D8B60032AC7A /* LFB_DIY_ButtonTool.swift */,
-				6F1E53102081D8610032AC7A /* FBFootRefreshControl.swift */,
-				6F1E53122081D8610032AC7A /* LFB_DIY_APPLanguage.swift */,
-				6F1E530C2081D8610032AC7A /* LFB_DIY_ColorTool.swift */,
-				6F1E53132081D8610032AC7A /* LFB_DIY_Common.swift */,
-				6F1E530E2081D8610032AC7A /* LFB_DIY_ControllerTool.swift */,
-				6F1E53142081D8610032AC7A /* LFB_DIY_DLog.swift */,
-				6F1E530F2081D8610032AC7A /* LFB_DIY_Extension.swift */,
-				6F1E530D2081D8610032AC7A /* LFB_DIY_ImageTool.swift */,
-				6F1E530A2081D8610032AC7A /* LFB_DIY_PublicPushTool.swift */,
-				6F1E530B2081D8610032AC7A /* LFB_DIY_StringTool.swift */,
+				6FA647DD2081E03D0046AA16 /* FBFootRefreshControl.swift */,
+				6FA647ED2081E0420046AA16 /* LFB_DIY_ButtonTool.swift */,
+				6FA647DF2081E03D0046AA16 /* LFB_DIY_APPLanguage.swift */,
+				6FA647D92081E03C0046AA16 /* LFB_DIY_ColorTool.swift */,
+				6FA647E02081E03D0046AA16 /* LFB_DIY_Common.swift */,
+				6FA647DB2081E03D0046AA16 /* LFB_DIY_ControllerTool.swift */,
+				6FA647E12081E03D0046AA16 /* LFB_DIY_DLog.swift */,
+				6FA647DC2081E03D0046AA16 /* LFB_DIY_Extension.swift */,
+				6FA647DA2081E03C0046AA16 /* LFB_DIY_ImageTool.swift */,
+				6FA647D72081E03C0046AA16 /* LFB_DIY_PublicPushTool.swift */,
+				6FA647D82081E03C0046AA16 /* LFB_DIY_StringTool.swift */,
 				6F72CBF7208086B60009A419 /* Info.plist */,
 			);
 			path = LFB_DIYToolBox;
@@ -230,17 +230,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F1E531B2081D8620032AC7A /* FBFootRefreshControl.swift in Sources */,
-				6F1E531F2081D8620032AC7A /* LFB_DIY_DLog.swift in Sources */,
-				6F1E53162081D8610032AC7A /* LFB_DIY_StringTool.swift in Sources */,
-				6F1E531E2081D8620032AC7A /* LFB_DIY_Common.swift in Sources */,
-				6F1E53152081D8610032AC7A /* LFB_DIY_PublicPushTool.swift in Sources */,
-				6F1E53192081D8610032AC7A /* LFB_DIY_ControllerTool.swift in Sources */,
-				6F1E531A2081D8620032AC7A /* LFB_DIY_Extension.swift in Sources */,
-				6F1E53172081D8610032AC7A /* LFB_DIY_ColorTool.swift in Sources */,
-				6F1E531D2081D8620032AC7A /* LFB_DIY_APPLanguage.swift in Sources */,
-				6F1E53232081D8B60032AC7A /* LFB_DIY_ButtonTool.swift in Sources */,
-				6F1E53182081D8610032AC7A /* LFB_DIY_ImageTool.swift in Sources */,
+				6FA647E82081E03D0046AA16 /* FBFootRefreshControl.swift in Sources */,
+				6FA647EC2081E03D0046AA16 /* LFB_DIY_DLog.swift in Sources */,
+				6FA647E32081E03D0046AA16 /* LFB_DIY_StringTool.swift in Sources */,
+				6FA647EB2081E03D0046AA16 /* LFB_DIY_Common.swift in Sources */,
+				6FA647E22081E03D0046AA16 /* LFB_DIY_PublicPushTool.swift in Sources */,
+				6FA647E62081E03D0046AA16 /* LFB_DIY_ControllerTool.swift in Sources */,
+				6FA647E72081E03D0046AA16 /* LFB_DIY_Extension.swift in Sources */,
+				6FA647E42081E03D0046AA16 /* LFB_DIY_ColorTool.swift in Sources */,
+				6FA647EA2081E03D0046AA16 /* LFB_DIY_APPLanguage.swift in Sources */,
+				6FA647EE2081E0420046AA16 /* LFB_DIY_ButtonTool.swift in Sources */,
+				6FA647E52081E03D0046AA16 /* LFB_DIY_ImageTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

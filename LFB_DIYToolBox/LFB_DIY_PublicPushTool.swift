@@ -9,7 +9,7 @@
 import UIKit
 
 
-class PublicPushTool: UIView {
+open class PublicPushTool: UIView {
     
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var timeLabel: UILabel!
@@ -17,7 +17,7 @@ class PublicPushTool: UIView {
     @IBOutlet var icon: UIImageView!
     let bgView = UIView()
     
-    class func makePush(with content: String) {
+    public class func makePush(with content: String) {
         let head = Bundle.main.loadNibNamed("PublicPushToolXib",
                                             owner: PublicPushTool.self,
                                             options: nil)?.first as! PublicPushTool

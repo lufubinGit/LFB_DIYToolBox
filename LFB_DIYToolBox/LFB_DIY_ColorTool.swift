@@ -8,20 +8,20 @@
 
 import UIKit
 
-extension UIColor{
+public extension UIColor{
   
-    static func DIY_color_RandowColor()->UIColor{ //随机颜色
+    public static func DIY_color_RandowColor()->UIColor{ //随机颜色
         return UIColor(red: CGFloat(arc4random()%40+70)/255.0, green:  CGFloat(arc4random()%180)/255.0, blue:  CGFloat(arc4random()%80+160)/255.0, alpha: 1.0)
     }
     
-    static func DIY_color_RGBA(r:CGFloat, g:CGFloat, b:CGFloat, a:CGFloat) -> UIColor {
+    public static func DIY_color_RGBA(r:CGFloat, g:CGFloat, b:CGFloat, a:CGFloat) -> UIColor {
         return UIColor(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: a)
     }
     
     /// 通过字符代码获取颜色
     ///
     /// - Parameter RGBA: 如 #FFFFFF 参数
-    convenience init(RGBA: String) {
+    public convenience init(RGBA: String) {
         var red:   CGFloat = 0.0
         var green: CGFloat = 0.0
         var blue:  CGFloat = 0.0

@@ -57,7 +57,7 @@ public enum LFB_DIY_LaunageType: String {
     }
 }
 
-func APPLocal(_ A: String) -> String{
+public func APPLocal(_ A: String) -> String{
     var s:String = "本地语言设置失败"
     let type:LFB_DIY_LaunageType = LFB_DIY_LaunageType.appLanguage()
     let path = Bundle.main.path(forResource: type.LaunageTag(), ofType: "lproj")!

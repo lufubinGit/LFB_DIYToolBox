@@ -11,9 +11,9 @@ import UIKit
 
 
 /***  一站式 建立 tabBar  **/
-extension UITabBarController {
+public extension UITabBarController {
     
-    convenience init(titles:[String],titleColor:UIColor?,selectTitleColor:UIColor?,images:[UIImage],selectImages:[UIImage],chindViewControllers:[UIViewController]){
+   public convenience init(titles:[String],titleColor:UIColor?,selectTitleColor:UIColor?,images:[UIImage],selectImages:[UIImage],chindViewControllers:[UIViewController]){
         
         self.init()
         for i in 0..<titles.count {
@@ -35,10 +35,10 @@ extension UITabBarController {
     }
 }
 
-extension UIViewController{
+public extension UIViewController{
     
-    typealias NavItemAction = (UIButton)->()
-    func creatNavItem(with images:[UIImage]?,titles:[String]? = ["item1","item2"],actions:[NavItemAction])->(UIBarButtonItem,UIView){
+    public typealias NavItemAction = (UIButton)->()
+    public func creatNavItem(with images:[UIImage]?,titles:[String]? = ["item1","item2"],actions:[NavItemAction])->(UIBarButtonItem,UIView){
         let itemW: CGFloat = 44
         let itemH: CGFloat = 44
         let bgViewH: CGFloat = 50

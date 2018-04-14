@@ -10,7 +10,7 @@ import UIKit
 import Foundation
 import Accelerate
 
-extension UIImage{
+public extension UIImage{
 
 // MARK ---------------------------------  类方法  ---------------------------------
     
@@ -20,7 +20,7 @@ extension UIImage{
     ///   - color: 指定颜色
     ///   - rect: 生成的图片大小
     /// - Returns: 返回图片
-    static func DIY_image_createImage(withColor color:UIColor ,rect:CGRect = CGRect.init(x: 0.0, y: 0.0, width: 100.0, height: 100.0)) -> UIImage{
+   public static func DIY_image_createImage(withColor color:UIColor ,rect:CGRect = CGRect.init(x: 0.0, y: 0.0, width: 100.0, height: 100.0)) -> UIImage{
         
         if(UIScreen.main.scale > 1){ //选用不同的context  让图片不模糊
             UIGraphicsBeginImageContextWithOptions(rect.size, false, UIScreen.main.scale)
@@ -40,7 +40,7 @@ extension UIImage{
     ///
     /// - Parameter aView: 提供的 View
     /// - Returns: view的照片
-    static func DIY_image_creatImage(formView aView:UIView) -> UIImage{
+    public static func DIY_image_creatImage(formView aView:UIView) -> UIImage{
         if(UIScreen.main.scale > 1){ //选用不同的context  让图片不模糊
             UIGraphicsBeginImageContextWithOptions(aView.bounds.size, false, UIScreen.main.scale)
         }else{
@@ -58,7 +58,7 @@ extension UIImage{
     /// 虚化称高斯模糊图片
     ///
     /// - Parameter blurNum: 调节值
-    func DIY_image_makeGaussBlur(withBlurNum blurNum:CGFloat) -> UIImage?{
+    public func DIY_image_makeGaussBlur(withBlurNum blurNum:CGFloat) -> UIImage?{
         
         var blur:CGFloat = 0.5
         if blurNum <= 1 && blurNum > 0{
@@ -111,7 +111,7 @@ extension UIImage{
     ///
     /// - Parameter color: 目标颜色
     /// - Returns: 修改颜色之后的图片
-    func DIY_image_blending(withColor color:UIColor, usingChannel: Bool = true) -> UIImage{
+    public func DIY_image_blending(withColor color:UIColor, usingChannel: Bool = true) -> UIImage{
         var Galpha:CGFloat = 1
         if usingChannel {
             Galpha = color.cgColor.alpha
@@ -133,7 +133,7 @@ extension UIImage{
     ///   - withMaskSize: 水印的位置
     ///   - maskImage: 水印图片
     /// - Returns: 返回绘制好的图片
-    func DIY_image_addWaterMask(withMaskRect rect:CGRect,maskImage:UIImage) -> UIImage {
+    public func DIY_image_addWaterMask(withMaskRect rect:CGRect,maskImage:UIImage) -> UIImage {
         
         if(UIScreen.main.scale > 1){ //选用不同的context,适用不同的@2x／@3x 的屏幕。让图片不模糊
             UIGraphicsBeginImageContextWithOptions(self.size, false, UIScreen.main.scale)
@@ -151,7 +151,7 @@ extension UIImage{
     ///
     /// - Parameter rect: 指定的 rect
     /// - Returns: 返回裁剪的图片
-    func dropImage(withRect rect: CGRect) -> UIImage {
+    public func dropImage(withRect rect: CGRect) -> UIImage {
         let scale:CGFloat = UIScreen.main.scale
         var dianRect:CGRect = CGRect.init(x: rect.origin.x*scale, y: rect.origin.y*scale, width: rect.size.width*scale, height: rect.size.height*scale)
         if dianRect.width > (self.cgImage?.width.cgfloat())! ||  dianRect.height > (self.cgImage?.height.cgfloat())!{
@@ -175,7 +175,7 @@ extension UIImage{
     ///   - xGap: 横向间隙
     ///   - yGap: 总想着间隙
     /// - Returns: 返回图片
-    func imageSizeToInBit8(size: CGSize, xGap: CGFloat = 0, yGap: CGFloat = 0) -> UIImage {
+    public func imageSizeToInBit8(size: CGSize, xGap: CGFloat = 0, yGap: CGFloat = 0) -> UIImage {
         
         if(UIScreen.main.scale > 1){ //选用不同的context,适用不同的@2x／@3x 的屏幕。让图片不模糊
             UIGraphicsBeginImageContextWithOptions(size, false, UIScreen.main.scale)
